@@ -75,15 +75,26 @@ text-align: center;
 
 export const Title = styled.div`
 transition: opacity .3s ease-in-out;
-    color: #fff;
+    color: #f8f8f2;
     font-weight: 700;
     font-size: 28px;
     text-decoration: none;
     letter-spacing: 2px;
-    padding: 20px 30px;
-    text-align: center;
+    padding: 20px 20px;
+    text-align: left;
     font-family: neuzeit grotesk bold,sans-serif;
 @media(max-width: 654px) {
     padding: 20px 52px;
  }
+`
+
+export const Logo = styled.img`
+  width: 97px;
+  margin-left: 9px;
+  position: relative;
+  top: 9px;
+  vertical-align: middle;
+  @media(max-width: 654px) {
+     display:97;
+    }
 `

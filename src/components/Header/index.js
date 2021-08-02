@@ -1,19 +1,23 @@
-import { Container, Title, Menu, MenuContainer, backgroundImage } from './styles'
+import { Container, Title, Menu, MenuContainer, backgroundImage,Logo } from './styles'
 import Link from 'next/link'
-
 
 function Header() {
     return <Container>
 
-    
-        <Title>The Polyglots</Title>
+        <Logo src='/Logo.png'></Logo>
+
+        <Title>The<br></br> Polyglots</Title>
         <MenuContainer>
-        <Link href='/'> 
+        <Link target="_blank" href='https://www.duolingo.com/' > 
         <Menu>DuoLingu</Menu>
         </Link>
-    
-        <Link href='/https://www.internetpolyglot.com/'> 
-        <Menu>Internet Poliglot</Menu>
+        <a href='https://www.duolingo.com/'
+      target="_blank" className="bold" >
+          Feed
+      
+      </a>
+        <Link href='/https://www.internetpolyglot.com/' >
+        <Menu target="_blank" >Internet Poliglot</Menu>
         </Link>
         <Link href='https://www.ankiweb.net/'> 
         <Menu>Anki</Menu>
